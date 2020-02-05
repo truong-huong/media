@@ -1,0 +1,1575 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:js='false' b:defaultwidgetversion='2' b:layoutsVersion='3' b:responsive='true' b:templateUrl='vegeclub.xml' b:templateVersion='1.3.0' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' lang='vi'>
+
+<head>
+    <!-- blogger head -->
+    <meta expr:content='"text/html; charset=" + data:blog.encoding' http-equiv='Content-Type'/>
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta content='#534d7a' name='theme-color'/>
+    <!-- Windows Phone -->
+    <meta content='#534d7a' name='msapplication-navbutton-color'/>
+      <link expr:href='data:blog.blogspotFaviconUrl' rel='icon' type='image/x-icon'/>
+      <b:if cond='data:blog.adultContent'>
+        <meta content='adult' name='rating'/>
+      </b:if>
+      <link expr:href='data:view.url.canonical' rel='canonical'/>
+      <data:blog.feedLinks/>
+      <data:blog.meTag/>
+      <b:tag name='link' cond='data:blog.googleProfileUrl' rel='publisher' expr:href='data:blog.googleProfileUrl'/>
+      <b:tag name='link' cond='data:view.featuredImage' expr:href='data:view.featuredImage' rel='image_src'/>
+      <!-- Metadata for Open Graph protocol. See http://ogp.me/ >
+    <b:if cond='data:view.featuredImage'>
+      <meta expr:content='resizeImage(data:view.featuredImage, 300, "1:1")' property='og:image'/>
+    <b:elseif cond='data:widgets'/>
+      <b:loop values='data:widgets.Blog.first.posts where (p => p.featuredImage) map (p => p.featuredImage)' var='imageUrl'>
+        <meta expr:content='resizeImage(data:imageUrl, 200, "1:1")' property='og:image'/>
+      </b:loop>
+    <b:elseif cond='data:blog.postImageUrl'/>
+      <meta expr:content='resizeImage(data:blog.postImageUrl, 300, "1:1")' property='og:image'/>
+    </b:if -->
+      <!--[if IE]><script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script>
+    <![endif]-->
+    <!-- Met SEO -->
+    <meta name="google-site-verification" content="wg18bMleH13zEjfjtJXntKuaX-6-S1UI3vdcPs4JEqY" />
+    <meta charset='utf-8' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='blogger' name='generator' />
+    <meta name="RATING" content="GENERAL" />
+    <link expr:href='data:blog.url' hreflang='x-default' rel='alternate' />
+    <meta http-equiv="Content-Language" content="vi" />
+    <meta name="revisit-after" content="7 days" />
+    <link href='https://www.blogger.com/openid-server.g' rel='openid.server' />
+    <link expr:href='data:blog.homepageUrl' rel='openid.delegate' />
+    <link expr:href='data:blog.url' rel='canonical' />
+    <meta content='IE=edge;chrome=1' http-equiv='X-UA-Compatible' />
+    <meta expr:content='data:blog.pageName + " : " +data:blog.title' property='og:title' />
+    <meta expr:content='data:blog.url' property='og:url' />
+    <meta content='codechui - học để chia sẻ - chia sẻ để học' property='og:site_name' />
+    <meta name="copyright" content="Copyright © 2020 by codechui" />
+    <meta name="author" content="codechui.blogspot.com" />
+    <meta content='1148726895462441' property='fb:app_id' />
+    
+    <!-- dữ liệu có cấu trúc -->
+    <b:if cond='data:view.isSingleItem'>
+        <b:if cond='data:blog.postImageThumbnailUrl'>
+            <meta itemprop="image" expr:src='resizeImage(data:blog.postImageUrl, 200, "1:1")' />
+        <b:else/>
+            <meta itemprop="image" src="https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg" />
+        </b:if>
+
+    <b:else/>
+            <meta itemprop="image" src="https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg" />
+    </b:if>
+    <b:if cond='data:blog.metaDescription'>
+        <b:if cond='data:view.isSingleItem'>
+            <meta expr:content='data:blog.metaDescription' itemprop="headline" />
+            <meta itemprop="alternativeHeadline" expr:content='data:blog.metaDescription' />
+            <b:else/>
+            <b:if cond='data:blog.pageName'>
+                <meta expr:content='data:blog.pageName + ", codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học"' itemprop="headline" />
+                <meta itemprop="alternativeHeadline" expr:content='data:blog.pageName + ", codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học"' />
+                <b:else/>
+                <meta content='codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học' itemprop="headline" />
+                <meta itemprop="alternativeHeadline" content='codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học' />
+            </b:if>
+        </b:if>
+        <b:else/>
+        <b:if cond='data:blog.pageName'>
+            <meta expr:content='data:blog.pageName +" codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học"' itemprop="headline" />
+            <meta itemprop="alternativeHeadline" expr:content='data:blog.pageName +" codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học"' />
+            <b:else/>
+            <meta content='codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học' itemprop="headline" />
+            <meta itemprop="alternativeHeadline" content='codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học' />
+        </b:if>
+    </b:if>
+
+    <meta itemprop="url" expr:content="data:blog.url" />
+    
+    <meta itemprop="genre" content="News" />
+    <!-- kết thúc dữ liệu có cấu trúc -->
+    <b:if cond='data:view.isSingleItem'>
+        <meta content='article' property='og:type' />
+        <meta expr:content='resizeImage(data:blog.postImageUrl, 200, "1:1")' property='og:image' />
+        <b:else/>
+        <meta content='website' property='og:type' />
+        <meta content='https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg' property='og:image' />
+    </b:if>
+    <meta name="page-topic" content="codechui - hacking - information technology" />
+    <b:if cond='data:blog.metaDescription'>
+        <b:if cond='data:view.isSingleItem'>
+            <meta expr:content='data:blog.metaDescription' property='og:description' />
+            <b:else/>
+            <b:if cond='data:blog.pageName'>
+                <meta expr:content='data:blog.pageName + ", codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học"' property='og:description' />
+                <b:else/>
+                <meta content='codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học' property='og:description' />
+            </b:if>
+        </b:if>
+        <b:else/>
+        <b:if cond='data:blog.pageName'>
+            <meta expr:content='data:blog.pageName +" codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học"' property='og:description' />
+            <b:else/>
+            <meta content='codechui là blog chia sẻ kiến thức được thành lập vì mục đích chia sẻ cho cộng đồng những bài viết chất lượng về hacking - lập trình và nhiều chủ đề hấp dẫn khác với tiêu chỉ học là chia sẻ - chia sẻ là học' property='og:description' />
+        </b:if>
+    </b:if>
+    <meta expr:content='data:blog.pageName + " " +data:blog.metaDescription' property='og:image:alt' />
+    <b:if cond='data:view.isMultipleItems'>
+        <title>
+            <data:blog.pageTitle/>
+        </title>
+        <b:else/>
+        <b:if cond='!data:view.isError'>
+            <title>
+                <data:blog.pageName/> -
+                <data:blog.title/>
+            </title>
+        </b:if>
+    </b:if>
+    <b:if cond='data:view.isError'>
+        <title>Page Not Found -
+            <data:blog.title/>
+        </title>
+    </b:if>
+    <b:if cond='data:view.isArchive'>
+        <meta content='noindex' name='robots' />
+    </b:if>
+    <b:if cond='data:blog.searchLabel'>
+        <meta content='noindex' name='robots' />
+    </b:if>
+    <!--b:if cond='data:blog.isMobile'>
+        <meta content='noindex' name='robots' />
+    </b:if-->
+    <b:if cond='data:view.isHomepage'>
+        <meta name="robots" content="index, follow" />
+    </b:if>
+    <b:if cond='!data:view.isError'>
+        <meta expr:content='data:blog.metaDescription' name='description' />
+        <b:if cond='data:blog.homepageUrl != data:blog.url'>
+            <b:if cond='data:view.isSingleItem'>
+                <meta expr:content='data:blog.pageTitle + ", " + data:blog.title + ", codechui , hacking , termux,code chui,học hacking cở bản, học là chia sẻ chia sẻ là học, học để chia sẻ chia sẻ để học"' name='keywords' />
+                <meta name="robots" content="index, follow" />
+                <b:else/>
+                <b:if cond='data:blog.pageName'>
+                    <meta expr:content='data:blog.pageName + ", " + data:blog.pageTitle + ", " + data:blog.title + ", codechui , hacking , termux,code chui,học hacking cở bản, học là chia sẻ chia sẻ là học, học để chia sẻ chia sẻ để học"' name='keywords' />
+                    <b:else/>
+                    <meta expr:content='data:blog.pageTitle + ", " + data:blog.title + ", codechui , hacking , termux,code chui,học hacking cở bản, học là chia sẻ chia sẻ là học, học để chia sẻ chia sẻ để học"' name='keywords' />
+                </b:if>
+            </b:if>
+            <b:else/>
+        </b:if>
+    </b:if>
+    <!-- Bắt đầu viết Css cho trang-->
+    <b:skin>
+        <![CDATA[
+                
+                
+                  /* Chèn Css vào đây */
+                  html {
+                      padding: 0;
+                      min-height:100vh;
+            margin: 0;
+              }
+        body {
+            padding: 0;
+            margin: 0;
+            max-width: 2048px;
+            margin-right: auto;
+            margin-left: auto;
+            font-size:large;
+            min-height:100vh;
+            font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+             word-wrap: break-word;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+            position: relative;
+        }
+        h1 {
+            margin:10px 0;
+        }
+        pre {
+            overflow-y:auto;
+
+        }
+        img {
+            position: relative;
+        }
+        img::before {
+            content: ' ';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #f1f1f1;
+        }
+        .loading::before {
+           content: ' ';
+           display: block;
+           position: absolute;
+            width: 100%;
+            height: 100%;
+           background-color: #f1f1f1;
+            animation-duration: 3.5s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            animation-name: placeHolderShimmer;
+            animation-timing-function: linear;
+            background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+        }
+            /* */
+
+            @keyframes placeHolderShimmer{
+                0%{
+                    background-position: -468px 0
+                }
+                100%{
+                    background-position: 468px 0
+                }
+            }
+            /* hide scroll bar */
+        .hide-scroll-bar {
+            overflow:hidden;
+        }
+        /* scroolbar */
+        ::-webkit-scrollbar {
+          width: 5px;
+          border-radius: 5px;
+        }
+        ::-webkit-scrollbar-track {
+          background: #f1f1f1; 
+            border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #888; 
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #555; 
+        }
+
+        .sticky-top {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+        .flex-sticky-bottom {
+            position: -webkit-sticky;
+              position: sticky;
+              bottom: 0;
+              align-self: flex-end;
+        }
+        #countPosts {
+            margin-right:5px;
+        }
+        .overflow {
+            overflow: auto;
+            overflow-x: hidden;
+        }
+        /* head */
+        .head {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            background: #34304c;
+        }
+        /* */
+        #open-menu , #open-sidebar {
+            display:none;
+        }
+        /* header */
+        .header {
+            background: #534d7a;
+            display: flex;
+            padding-top:15px;
+            padding-bottom: 15px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            -webkit-flex-flow:row wrap;
+
+        }
+        /* admin info */
+        .admin {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+        }
+        .admin-info {
+            display: flex;
+            flex-direction: column;
+        }
+        .admin img {
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
+        .admin-contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: 10px;
+        }
+        .font-awesome {
+            margin: 2.5px;
+            background: #f1f1f1;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+        }
+        /* search */
+        .search {
+            width: 30%;
+            min-width:180px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .search input {
+            border-style: none;
+            outline: none;
+            width:100%;
+            padding: 5px;
+            border: none;
+        }
+        /* client */
+        .client {
+            display: flex;
+            flex-direction: row;
+        }
+        .client .font-awesome{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .outline-container {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        /* body */
+        .body {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+           
+            align-items: flex-start;
+        }
+        /* menu */
+        .menu i {
+            color: #6e6666;
+        }
+        .menu-name {
+            margin-top: 50px;
+            font-weight:bold;
+        }
+        .menu {
+            width: 13%;
+            min-width: 150px;
+            background:#fff;
+
+        }
+        .sub-menu {
+            width: 100%;
+            
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        .menu-item .font-awesome {
+            background: #fff;
+            margin-right: 15px;
+        }
+        .menu-item {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .menu-item:hover , .menu-item:hover * {
+            color: #4146FF;
+        }
+        /* main */
+        .main {
+            width: 67%;
+            display:flex;
+            align-items: flex-start;
+        }
+        .main , .main * {
+
+            max-width:100%;
+        }
+        /* sidebar */
+        .sidebar {
+            width: 20%;
+            min-width: 220px;
+            display: flex;
+            align-items: flex-start;
+            background:#fff;
+
+        }
+
+        .sidebar img {
+          border-radius: 50%;
+          -webkit-transition: -webkit-transform .8s ease-in-out;
+                  transition:         transform .8s ease-in-out;
+        }
+        .sidebar img:hover {
+          -webkit-transform: rotate(360deg);
+                  transform: rotate(360deg);
+        }
+        .popular-post {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom:10px;
+        }
+        .topic-name {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-size: large;
+            font-weight:bolder;
+        }
+        .dot {
+            width: 10px;
+            height: 10px;
+            display: block;
+            border-radius: 50%;
+            background: #bf2626;
+            margin-right: 10px;
+        }
+        .topic-item {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 15px;
+        }
+        .topic-item:hover {
+            transform: scale(1.05);
+        }
+        .topic-item-info {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            width: 100%;
+            justify-content: space-between;
+        }
+        .topic-item-info img {
+            width: 60px;
+            height: 60px;
+            min-width:60px;
+            min-height:60px;
+        }
+        .topic-item-label {
+            font-size: smaller;
+            /*background: red;*/
+            color: #bf2626;
+            border-radius: 15px;
+            padding: 1.5px;
+            margin: 2px;
+            font-weight: bolder;
+        }
+        .topic-item-author {
+            font-size: smaller;
+            color: #f0a99b;
+            font-weight: bolder;
+        }
+
+        /* footer */
+        .footer {
+            margin-top: 50px;
+            padding-left:25px;
+            padding-right:25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 25px;
+            border-top: solid #f1f1f1;
+            padding-top: 10px;
+            background: #f1f1f1;
+            font-weight: bold;
+            -webkit-flex-flow:row wrap;
+        }
+        .footer-section {
+            width: 33.3333%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-width:290px;
+
+        }
+        .website-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        #website-info span {
+            font-size: small;
+            font-weight: bolder;
+            color:#ff9c82;
+            margin-top: 10px;
+        }
+        #website-info img {
+            width:60px;
+            height:60px;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+        }
+        #website-info , #webite-about{
+            display: flex;
+            flex-direction: column;
+                margin:5px;
+        }
+        /* donate */
+        .contact {
+            display: flex;
+            flex-direction: column;
+        }
+        .donate {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        /* copyright */
+        .copyright {
+            background: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding:5px;
+        }
+        #copyright {
+            }
+
+        /* post */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            -webkit-flex-flow:row wrap;
+            width:100%;
+        }
+        .post-item {
+            width: 275px;
+            margin-bottom: 40px;
+        }
+        /* demo */
+        .post-item:hover {
+            transform: scale(1.05);
+        }
+
+
+        /* demo */
+        .post-item-container {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .post-item-info {
+            margin-top: 10px;
+            padding:0 10px 0px 10px;
+            display: flex;
+            flex-direction: row;
+        }
+        .post-item-date {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            color: #4c6fd0;
+            font-weight: bolder;
+        }
+        .post-item-date span {
+            margin-left: 2.5px;
+        }
+        .post-item-date i {
+            font-size: 12px;
+        }
+        .post-title {
+            margin-right: 2.5px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+        .firstChar {
+            display: block;
+            background: #f59667;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            font-weight: bolder;
+            border-radius: 50%;
+            padding: 3px;
+            margin-right: 2.5px;
+            text-transform: uppercase;
+        }
+        .post-item-plus {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .post-image {
+            overflow: hidden;
+            width: 115px;
+            height: 80px;
+            min-width: 115px;
+            min-height: 80px;
+            border-radius: 10px;
+        }
+        .post-image img {
+            width: 100%;
+            height: 100%;
+            min-width:100%;
+            min-height:100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform .5s ease;
+        }
+
+        .post-image img:hover {
+          transform: scale(2);
+        }
+        .post-section img {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            min-height: 20px;
+            border-radius: 50%;
+            margin-right: 2.5px;
+        }
+        .post-section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+        }
+        .post-section span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        /* heart */
+        .fa-heartbeat {
+            animation: pulse 1s ease infinite;
+            }
+
+            @keyframes pulse {
+              0% { transform: scale(1); }
+              50% { transform: scale(1.3); }
+              100% { transform: scale(1); }
+            }
+
+         /* next */
+         .next {
+            margin-top:20px;
+         }
+         .nextContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         }
+         .next-section {
+            background-color: #f1f1f1;
+            padding:10px;
+            width: 40px;
+            height: 15px;
+            min-height: 15px;
+            min-width: 40px;
+            max-height: 15px;
+            max-width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         }
+         .next-section span {
+            font-size: x-large;
+         }
+         /* entry */
+         .entry , .entry * {
+         max-width:100%;
+         }
+         .entry-post-section  {
+                display:flex;
+                flex-direction: row;
+                align-items: center;
+                overflow:hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+         }
+
+           .entry-post-section .font-awesome {
+                border-radius:50%;
+                background:#fff;
+           }
+
+         #entry-header, #entry-post, #entry-post-info {
+            width:100%;
+         }
+         #entry-post-info-container {
+            padding:5px;
+            padding-left:0;
+            margin : 5px;
+            margin-left:0;
+            display:flex;
+            -webkit-flex-flow:row wrap;
+            flex-direction: row;
+            justify-content: flex-start;
+         }
+         #entry-post-date {
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+         }
+         #entry-post-info {
+            border-radius:5px;
+            width:auto;
+            margin-bottom: 10px;
+            color:#292626;
+         }
+         #textlength {
+            margin-right:2.5px;
+         }
+         .entry-post-author img {
+            width: 20px;
+            height: 20px;
+            min-width: 20px;
+            min-height: 20px;
+            border-radius: 50%;
+            margin-right: 2.5px;
+         }
+         .entry-post-author {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+         }
+         .entry-post-author span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+         }
+         #entry-post-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+         
+         }
+         /* number of posts */
+         .where-i-am {
+            width:100%;
+            margin-top:15px;
+            margin-bottom:15px;
+            font-size:small;
+         }
+         .i-am-here {
+            margin:0 2.5px;
+            color:red;
+            font-weight:bolder;
+         }
+         /* nav */
+        .nav {
+            display:flex;
+            flex-direction: row;
+            margin-top:2.5px;
+            justify-content: space-between;
+            padding:10px 20px 0 20px;
+        }
+        .nav-section {
+            font-size:large;
+        }
+        .nav-section span {
+            padding:10px;
+            display:flex;
+            align-items: center;
+        }
+        /* close */
+        .close {
+            display:none;
+            justify-content: flex-end;
+        }
+        .close-me {
+            padding:10px;
+        }
+        .show {
+            display:flex !important;
+            flex-direction: column;
+            width:100%;
+            height:100%;
+            position: fixed;
+            top:0;
+            left:0;
+            z-index:10;
+            overflow-y:auto;
+        }
+        .show .close {
+            display:flex;
+            width:100%;
+        }
+        /* comments */
+        .comments {
+            margin-top:20px;
+        }
+         /* dành cho việc reponsive trang web */
+         @media only screen and (max-width: 550px) {
+                .entry-post-section:hover span:not(:first-child) {
+                      display:block;
+                }
+                  .entry-post-section span:not(:first-child) {
+                      display:none;
+                } 
+         }
+         @media only screen and (max-width: 500px) {
+            .search {
+                width:85%;
+                margin-top:10px;
+
+            }
+         }
+         @media only screen and (max-width: 615px) {
+            .search {
+                order : 3 ;
+                -webkit-order: 3;
+            }
+            .body {
+                padding:0;
+                margin:0;
+            }
+            .main {
+                margin:0;
+            }
+         }
+@media only screen and (min-width: 1024px) {
+.menu-item {
+           font-size: small;  
+}
+
+
+         }
+@media only screen and (max-width: 1024px) {
+            .menu {
+                display:none;
+                min-height:100vh;
+            }
+            .menu .outline-container {
+                margin-top:0;
+                padding-top:0;
+            }
+
+            #open-menu {
+                display:block;
+            }
+            .main {
+                width:70%;
+            }
+            .sidebar {
+                width:30%;
+            }
+}
+         @media only screen and (max-width: 960px) {
+           
+            .body {
+                justify-content: space-around;
+            }
+            @media only screen and  (min-width: 735px) and (max-width: 900px) { 
+                .post-item {
+                    width:225px;
+                }
+                .post-image img , .post-image{
+                    width:80px;
+                    height:50px;
+                    min-width: 80px;
+                    min-height: 50px;
+                }
+                
+            }
+            @media only screen and (max-width: 750px) {
+                .sidebar {
+                    display:none;
+                    width:100%;
+                    min-height:100vh;
+                }
+                .sidebar .outline-container {
+                    margin-top:0;
+                    padding:0;
+                }
+                
+                #open-sidebar {
+                    display:block;
+                }
+                .main {
+                    width:100%;
+                }
+            }
+            @media only screen and (max-width: 650px) {
+                .footer-section {
+                    width:100%;
+                    justify-content: flex-start;
+                }
+            }
+            @media only screen and (max-width: 580px) {
+                .main .outline-container {
+                    margin:0;
+                }
+            }
+            @media only screen and (max-width: 425px) {
+                .post-item {
+                    width:100%;
+                }
+            }
+         }
+    ]]>
+    </b:skin>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152767241-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-152767241-1');
+    </script>
+
+</head>
+
+
+
+<body>
+    <!--Bắt đầu phần hiển thị trên trang-->
+    <include expiration='7d' path='*.css' />
+    <include expiration='7d' path='*.js' />
+    <include expiration='3d' path='*.gif' />
+    <include expiration='3d' path='*.jpeg' />
+    <include expiration='3d' path='*.jpg' />
+    <include expiration='3d' path='*.png' />
+    <!-- template -->
+    <template id='topic-item'>
+        <a class='topic-item'>
+            <span class='topic-item-title'><span export='expTitle' /> <span class='topic-item-label' export='expLabel' /></span>
+            <div class='topic-item-info'>
+                <span class='topic-item-author' export='expaName' />
+                <img export='expImage' />
+            </div>
+        </a>
+    </template>
+    <!-- phần hiển thị header -->
+    <header class='header'>
+        <!-- phần hiển thị thông tin chủ trang web -->
+        <div class='admin'>
+            <img src='https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg' />
+            <div class='admin-info'>
+                <a style='font-weight: bold;' href='/'>Trương Hướng</a>
+                <div class='admin-contact'>
+                    <a href='//www.instagram.com/truong._.huong/' rel='nofollow' target='_blank'><span class='font-awesome'><i class='fab fa-instagram' /></span></a>
+                    <a href='//www.facebook.com/cn.muoi' rel='nofollow' target='_blank'><span class='font-awesome'><i class='fab fa-facebook-f' /></span></a>
+                    <a href='email:truongvanhuong.code.url@gmail.com' rel='nofollow' target='_blank'><span class='font-awesome'><i class='far fa-envelope' /></span></a>
+                </div>
+            </div>
+        </div>
+        <!-- tìm kiếm tại đây -->
+
+        <form action='/search' class='search'>
+            <input name='q' placeholder='Tìm kiếm tại đây' type='' />
+            <label>
+                <input style='display:none' type='submit' /><span><i class='fas fa-search' /></span>
+            </label>
+        </form>
+
+        <!-- cho người sử dụng -->
+        <div class='client'>
+            <span class='font-awesome'><i class='far fa-edit' /></span>
+            <span class='font-awesome'><i class='far fa-bell' /></span>
+            <span class='font-awesome'><i class='fab fa-nutritionix' /></span>
+        </div>
+    </header>
+    <nav class='nav'>
+        <div class='nav-section' id='open-menu'>
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+        <div class='nav-section' id='open-sidebar'>
+            <span><i class="fas fa-bars"></i></span>
+        </div>
+    </nav>
+    <main class='body'>
+        <nav class='menu'>
+            <div class='close'><span class='close-me' trigger='open-menu'><i class="fas fa-times"></i></span>
+            </div>
+            <div class='outline-container'>
+                <div class='sub-menu'>
+                    <a class='menu-item' href='/'><span class='font-awesome'><i class='fas fa-home'/></span>Trang chủ</a>
+                    <a class='menu-item' href='/p/about.html'><span class='font-awesome'><i class='fas fa-info-circle'/></span>Giới thiệu</a>
+                    <a class='menu-item' href='/p/policy.html'><span class='font-awesome'><i class='fas fa-heart'/></span>Quy Định</a>
+                    <a class='menu-item' href='/p/contact.html'><span class='font-awesome'><i class="fas fa-id-card-alt"></i></span>Contact</a>
+                    <a class='menu-item' href='/p/a-phuong-tien.html'><span class='font-awesome'><i class="fas fa-photo-video"></i></span>Media</a>
+                </div>
+                <span class='menu-name'>Hacker</span>
+                <div class='sub-menu'>
+                    <a class='menu-item' href='/search/label/beginner'><span class='font-awesome'><i class="fab fa-slack"></i></span>Beginner</a>
+                    <a class='menu-item' href='/search/label/linux'><span class='font-awesome'><i class="fab fa-linux"></i></span>Linux</a>
+                    <a class='menu-item' href='/search/label/ddos'><span class='font-awesome'><i class="fas fa-bomb"></i></span>DDoS/DoS</a>
+                    <a class='menu-item' href='/search/label/termux'><span class='font-awesome'><i class="fas fa-terminal"></i></span>Termux</a>
+                    <a class='menu-item' href='/search/label/questions'><span class='font-awesome'><i class="far fa-question-circle"></i></span>Questions</a>
+                </div>
+                <span class='menu-name'>Hacking</span>
+                <div class='sub-menu'>
+                    <a class='menu-item' href='/search/label/information-gathering'><span class='font-awesome'><i class='fas fa-info-circle'/></span>Information Gathering</a>
+                    <a class='menu-item' href='/search/label/wireless-attack'><span class='font-awesome'><i class="fas fa-wifi"></i></span>Wireless Attack</a>
+                    <a class='menu-item' href='/search/label/password-attack'><span class='font-awesome'><i class="fas fa-key"></i></span>Password Attack</a>
+                    <a class='menu-item' href='/search/label/stress-testing'><span class='font-awesome'><i class="fas fa-syringe"></i></span>Stress Testing</a>
+                </div>
+                <span class='menu-name'>Coder</span>
+                <div class='sub-menu'>
+                    <a class='menu-item' href='/search/label/python'><span class='font-awesome'><i class="fab fa-python"></i></span>Python</a>
+                </div>
+                <!-- -->
+
+            </div>
+        </nav>
+        <b:section class='main' id='main' showaddelement='yes'>
+            <b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog' version='2' visible='true'>
+                <b:widget-settings>
+                    <b:widget-setting name='showDateHeader'>false</b:widget-setting>
+                    <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+                    <b:widget-setting name='showShareButtons'>false</b:widget-setting>
+                    <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+                    <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+                    <b:widget-setting name='showAuthor'>true</b:widget-setting>
+                    <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+                    <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+                    <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+                    <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+                    <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+                    <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+                    <b:widget-setting name='showLabels'>true</b:widget-setting>
+                    <b:widget-setting name='showLocation'>true</b:widget-setting>
+                    <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+                    <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+                    <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+                    <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+                    <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+                    <b:widget-setting name='showReactions'>false</b:widget-setting>
+                </b:widget-settings>
+                <b:includable id='main' var='top'>
+                    <div class='outline-container'>
+
+                        <div class='main-container'>
+                            <!-- hiển thị số lượng bài viết thuộc xxx hoặc địa chỉ đang ở -->
+                            <b:include name='postsnumber' />
+                            <!-- Nội dung chỉ hiển thị với trang tĩnh và bài viết -->
+                            <b:include name='allposts' />
+
+                            <!-- nếu không tìm thấy bất kì bài đăng nào -->
+                            <b:if cond='not data:posts.any'>
+                                <div class='no-posts'>
+                                    <b:eval expr='data:view.isSearch ? data:messages.noResultsFound : data:messages.theresNothingHere' />
+                                </div>
+                            </b:if>
+                        </div>
+                        <b:if cond='data:view.isPost'> 
+                            <b:include name='fbcomments'/>
+                        </b:if> 
+                        <b:include name='nextprev' />
+                    </div>
+                </b:includable>
+                <!-- facebook comment -->
+                <b:includable id='fbcomments'>
+                        <div class='comments' style='min-height:178px;'>
+                        <div class="fb-comments" expr:data-href="data:blog.url" data-width="100%" data-numposts="15"></div>
+                        <div id="fb-root"></div>
+                        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v5.0&appId=1148726895462441&autoLogAppEvents=1"></script>
+                    </div>
+                </b:includable>
+                <!-- số lượng bài viết -->
+                <b:includable id='postsnumber'>
+                    <div class='where-i-am'>
+                        <b:if cond='data:view.isSingleItem'>
+                            Mảnh ghép <span class='i-am-here'><data:blog.pageName/></span> đang được trả về
+                            <b:else/>
+                            <span class='i-am-here'><data:posts.size/></span> mảnh ghép
+                            <b:if cond='data:view.search.query'>
+                                về <span class='i-am-here'><data:view.search.query/></span>
+                            </b:if>
+                            <b:if cond='data:view.isArchive'>
+                                vào <span class='i-am-here'><data:blog.pageName/></span>
+                            </b:if>
+                            được trả về
+                        </b:if>
+                    </div>
+                </b:includable>
+                <!-- nút tiếp theo và nút trở về của các bài viết -->
+                <b:includable id='nextprev'>
+                    <div class='next'>
+                        <div class='nextContainer'>
+                            <div>
+                                <b:if cond='data:newerPageUrl'>
+                                    <a class='next-section' expr:href='data:newerPageUrl'>
+                                        <span><i class='fas fa-angle-left' /></span>
+                               
+                                    </a>
+                                </b:if>
+                            </div>
+                            <div>
+                                <b:if cond='data:olderPageUrl'>
+                                    <a class='next-section' expr:href='data:olderPageUrl'>
+                                        <span expr:title='data:newerPageTitle'><i class='fas fa-angle-right' /></span>
+                            
+                                    </a>
+                                </b:if>
+                            </div>
+                        </div>
+                    </div>
+                </b:includable>
+                <b:includable id='allposts'>
+
+                    <b:loop values='data:posts' var='post'>
+                        <b:if cond='!data:view.isSingleItem'>
+                            <!-- hiển thị danh sách bài viết -->
+                            <div class='post-item'>
+                                <div class='post-item-container'>
+                                    <!-- hiển thị ngày bài đăng -->
+                                    <div class='post-item-date'>
+                                        <i aria-hidden='true' class='fas fa-clock' /><span>
+                                            <data:post.date /></span>
+                                    </div>
+                                    <!-- hiển thị thông tin bài đăng -->
+                                    <a class='post-item-info' expr:href='data:post.url' expr:title='data:post.title'>
+                                        <div class='post-title'>
+                                            <span style='font-size: larger;'>
+                                                <data:post.title /></span>
+                                        </div>
+                                        <div class='post-image'>
+                                            <b:if cond='data:post.thumbnailUrl'>
+                                                <img class='loading' expr:alt='data:post.title' expr:data-src='resizeImage(data:post.thumbnailUrl, 200, "1:1")' />
+                                                <b:else />
+                                                <img class='loading' alt='codechui.com' data-src='https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg' />
+                                            </b:if>
+                                        </div>
+
+                                    </a>
+                                    <!-- hiển thị thông tin tác giả và nhãn bài đăng -->
+                                    <div class='post-item-plus'>
+                                        <b:if cond='data:post.labels.last.name'>
+                                            <a expr:title='data:post.title' class='post-section' expr:href='"/search/label/"+data:post.labels.last.name'>
+                                                <span class='firstChar' expr:data-first-label='data:post.labels.last.name' />
+                                                <span class='post-label'>
+                                                    <data:post.labels.last.name /></span>
+                                            </a>
+                                            <b:else />
+                                            <a expr:title='data:post.title' class='post-section' href='/'>
+                                                <span class='firstChar' data-first-label='N' />
+                                                <span class='post-label'>Not Found</span>
+                                            </a>
+                                        </b:if>
+                                        <div class='post-section'>
+                                            <b:if cond='data:post.author.name == "@muối.tv"'>
+                                                <img class='loading' data-src='https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg' />
+                                            </b:if>
+
+                                            <span class='post-author'>
+                                                <data:post.author.name /></span>
+                                        </div>
+                                    </div>
+                                    <!-- hiển thị bài viết liên quan đến bài đăng -->
+                                </div>
+                            </div>
+                            <!-- / hiển thị danh sách bài viết -->
+                            <b:else />
+                            <div class='entry'>
+                                <div id='entry-header'>
+                                    <div id='entry-post-date'>
+                                        <div class="post-item-date">
+                                            <i class="fas fa-clock"></i><span>
+                                        <data:post.date/></span>
+                                        </div>
+                                    </div>
+                                    <a expr:href='data:post.url'>
+                                        <h1>
+                                            <data:post.title />
+                                        </h1>
+                                    </a>
+                                </div>
+                                <div id='entry-post-info'>
+                                    <div id='entry-post-info-container'>
+                                        <div class='entry-post-author entry-post-section'>
+                                            <b:if cond='data:post.author.name == "@muối.tv"'>
+                                                <img class='loading' data-src='https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg'/>
+                                            </b:if>
+                                            <span class='post-author'>
+                                                <data:post.author.name /></span>
+                                        </div>
+                                        <div id='entry-post-count-word' class="entry-post-section">
+                                            <span class='font-awesome'><i class='fas fa-feather-alt' /></span><span id='textlength' /><span>word(s)</span>
+                                        </div>
+                                        <div id='entry-post-read-time' class="entry-post-section">
+                                            <span class='font-awesome'><i class="fas fa-book-reader"></i></span><span id='readtime' />
+                                        </div>
+                                        <div id='entry-post-label' class="entry-post-section">
+                                            <b:if cond='data:post.labels.last.name'>
+                                                <span class='font-awesome'><i class='fas fa-tags' /></span>
+                                                <span><data:post.labels.last.name /></span>
+                                                <b:else />
+                                                <span class='font-awesome'><i class='fas fa-tags' /></span><span>Not Found</span>
+                                            </b:if>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id='entry-post'>
+                                    <data:post.body />
+                                </div>
+                            </div>
+                        </b:if>
+                    </b:loop>
+
+                </b:includable>
+
+
+
+
+            </b:widget>
+        </b:section>
+        <aside class='sidebar'>
+            <div class='close'><span class='close-me' trigger='open-sidebar'><i class="fas fa-times"></i></span>
+            </div>
+            <div class='outline-container'>
+                <b:section id='topic' showaddelement='yes'>
+                    <b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts' version='1' mobile='yes'>
+                        <b:widget-settings>
+                            <b:widget-setting name='numItemsToShow'>8</b:widget-setting>
+                            <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+                            <b:widget-setting name='showSnippets'>true</b:widget-setting>
+                            <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+                        </b:widget-settings>
+                        <b:includable id='main' var='top'>
+                            <div class='topic'>
+                                <span class='topic-name'>
+                                    <p class='dot' />Bài viết phổ biến</span>
+                                <b:loop values='data:posts' var='post'>
+                                    <a expr:href='data:post.href'>
+                                        <div class="popular-post">
+                                            <div style='margin-right:10px'>
+                                                <i class="fas fa-book-open"></i>
+                                            </div>
+                                            <div class='topic-item-title'>
+                                                <data:post.title />
+                                            </div>
+                                        </div>
+                                    </a>
+                                </b:loop>
+                            </div>
+                        </b:includable>
+                    </b:widget>
+                </b:section>
+                <div class='topic' data-topic='hacking'>
+                    <span class='topic-name'>
+                        <p class='dot' />Hacking</span>
+                    <div class='topic-container'>
+
+                    </div>
+                </div>
+                <div class='topic' data-topic='Blogpot'>
+                    <span class='topic-name'>
+                        <p class='dot' />Blogspot</span>
+                    <div class='topic-container'>
+
+                    </div>
+                </div>
+                <div class='topic' data-topic='python'>
+                    <span class='topic-name'>
+                        <p class='dot' />Python</span>
+                    <div class='topic-container'>
+                    </div>
+                </div>
+                <div class='topic' data-topic='questions'>
+                    <span class='topic-name'>
+                        <p class='dot' />Question</span>
+                    <div class='topic-container'>
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer class='footer'>
+        <div class='footer-section'>
+            <div class='website-info'>
+                <div id='website-info'>
+                    <img class='loading' data-src='https://1.bp.blogspot.com/-vf9PIVonPEQ/XjJnudNfIdI/AAAAAAAAD50/H6MhatPKmog25i8bQH5Okew52HXZTmxeQCLcBGAsYHQ/s320/anh-avatar-buc-minh-cuc-hai-huoc.jpg' alt='codechui' />
+                    <span>muoiblog.com</span>
+                </div>
+                <div id='webite-about'>
+                    <a class='donate' href='/'><span class='font-awesome'><i class='fas fa-puzzle-piece' /></span><span id='countPosts'/>mảnh ghép</a>
+                    <span class='donate'><span class='font-awesome'><i class='fas fa-at' /></span>4 con người</span>
+                    <span class='donate'><span class='font-awesome'><i class='fas fa-igloo' /></span>1 gia đình</span>
+                    <span class='donate'><span class='font-awesome'><i class='fas fa-car-battery' /></span>động lực bởi muối | blogger</span>
+                </div>
+            </div>
+        </div>
+        <div class='footer-section'>
+            <div class='contact'>
+                <span class='donate'><span class='font-awesome'><i class='fab fa-paypal' /></span>023423424323443</span>
+                <span class='donate'><span class='font-awesome'><i class='far fa-envelope' /></span>muoi2k3</span>
+                <span class='donate'><span class='font-awesome'><i class='fas fa-mobile-alt' /></span>0332124082</span>
+            </div>
+        </div>
+        <div class='footer-section'>
+            <div class='contact'>
+                <span class='donate'><span class='font-awesome'><i class='fas fa-globe-asia' /></span>Wikipedia</span>
+                <span class='donate'><span class='font-awesome'><i class='fas fa-solar-panel' /></span>Học viện online</span>
+                <span class='donate'><span class='font-awesome'><i class='fab fa-linux' /></span>Ăn cơm nhà</span>
+            </div>
+        </div>
+    </footer>
+    <div class='copyright'>
+        <div id='copyright'>
+            <span id='year' /> <i class='fas fa-heartbeat' style='color: red;' /> muoi
+        </div>
+    </div>
+</body>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js' />
+<!--Kết thúc phần hiển thị trên trang-->
+<script type='text/javascript'>
+    //<![CDATA[
+
+    function checkSidebar() {
+        // Chi thuc hien neu nhu chieu rong cua document lon hon chieu rong ma sidebar se an
+        if ($(window).width() >= 750) {
+            if (($('.sidebar .outline-container').height() > $(window).height()) && ($('.main .outline-container').height() > $('.sidebar .outline-container').height())) {
+                $('.sidebar').addClass('flex-sticky-bottom');
+            }
+        }
+    };
+    // Hàm hiển thị post ra sidebar  
+    function showpost(res, a) {
+
+            var feed = res.feed;
+            if (feed.entry) {
+                var num_post = feed.entry.length;
+                var myPosts = $("template#topic-item").html().trim();
+                var myPostsArray = [];
+                for (let i = 0; i < num_post; i++) {
+                    myPostsArray.push(myPosts);
+                }
+                a.find('.topic-container').html(myPostsArray.join(''));
+                var i = 0;
+                a.find('.topic-container .topic-item').each(
+                    function() {
+                        try {
+                            $(this).attr('href', feed.entry[i].link[feed.entry[i].link.length - 1].href)
+                        } catch (e) {};
+                        try {
+                            $(this).find('[export=expTitle]').html(feed.entry[i].title.$t);
+                        } catch (e) {};
+                        try {
+                            $(this).find('[export=expLabel]').html(feed.entry[i].category[Math.floor(Math.random() * (feed.entry[i].category.length))].term);
+                        } catch (e) {};
+                        try {
+                            $(this).find('[export=expaName]').html(feed.entry[i].author[0].name.$t);
+                        } catch (e) {};
+                        try {
+                            $(this).find('[export=expImage]').addClass('loading').attr('data-src', feed.entry[i].media$thumbnail.url);
+                        } catch (e) {};
+                        i++;
+                    });
+            } else {
+                a.find('.topic-container').html('(-.-) Không có bài nào được tìm thấy');
+            }
+            checkSidebar();
+
+        }
+        // Hàm lấy dữ liệu
+    function getData(address) {
+
+        var $this = address;
+        var label = $this.attr('data-topic');
+        var url = '/feeds/posts/summary/-/' + label + '?alt=json-in-script&max-results=' + (($this.attr('max-results')) ? $this.attr('max-results') : '4');
+        $.ajax({
+            url: url,
+            type: "get",
+            dataType: "jsonp",
+            success: function(e) {
+                showpost(e, $this);
+            }
+        });
+        // Xóa data-topic
+        address.removeAttr('data-topic');
+        checkSidebar();
+    }
+
+
+    // demo
+    function check(e) {
+        var elementTop = e.offset().top;
+        var elementBottom = elementTop + e.outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+        return elementBottom > viewportTop && elementTop < viewportBottom;
+    }
+
+    function showTopicSidebar() {
+        $('[data-topic]').each(
+            function() {
+                if (check($(this))) {
+                    getData($(this));
+                }
+            }
+        );
+    }
+
+    // Lazy load image
+    function showImages() {
+            $('img[data-src]').each(
+                function() {
+                    if (check($(this))) {
+                        $(this).attr('src', $(this).attr('data-src')).removeAttr('data-src');
+                    }
+                }
+            );
+
+        }
+        // Hàm lấy kí tự đầu tiên của nhãn
+    $(document).ready(
+        function() {
+            // Đếm số lượng bài viết 
+            (function() {
+                $.ajax({
+                    url: '/feeds/posts/summary?alt=json-in-script&max-results=0',
+                    type: "get",
+                    dataType: "jsonp",
+                    success: function(e) {
+                        $('#countPosts').html(parseInt(e.feed.openSearch$totalResults.$t, 10));
+                    }
+                });
+            })();
+
+            // kiểm tra xem mục sidebar có dài hơn mục main không
+            (function() {
+                var sidebar = $('.sidebar');
+                var main = $('.main');
+                var menu = $('.menu');
+                // Add class sticky cho đến khi menu không còn chạm top
+                $(document).scroll(function() {
+                    // Chỉ chạy đoạn code này nếu màn hình rộng hơn 960px;
+                    // Chức năng là làm cho cái thanh menu tùy biến theo màn hình 
+                    if ($(window).width() > 960) {
+                        if ($(window).scrollTop() === 0) {
+                            menu.addClass("sticky-top overflow").attr('style', 'max-height:' + ($(window).height() - menu.offset().top + 'px'));
+                            $('.menu').animate({
+                                scrollTop: 0
+                            }, 500);
+                        } else {
+                            menu.addClass("sticky-top overflow").attr('style', 'max-height:100vh');
+                        }
+                        // Ngược lại thì luôn luôn set mặc định là tối đa 100vh cho chiều dài thanh menu
+                    } else {
+                        menu.attr('style', 'max-height:100vh');
+                    };
+                    // Đoạn code sau đây add tùy biến stiky cho class main nếu chiều dài class main ngắn hơn chiều dài thanh sidebar
+                    if (($('.main .outline-container').height() < $('.sidebar .outline-container').height()) && ($('.main .outline-container').height() > $(window).height())) {
+
+                        $('.main').addClass('flex-sticky-bottom');
+                    } else {
+                        $('.main').removeClass('flex-sticky-bottom');
+                    }
+                });
+            })();
+            // Lazy load image
+            showImages();
+            // Show sidebar
+            showTopicSidebar();
+            // lấy kí tự đầu tiên của nhãn
+            $('[data-first-label]').each(
+                function() {
+                    $(this).html($(this).attr('data-first-label').charAt(0));
+                }
+            );
+            // readtime 
+            (function() {
+
+                var ev = $('#entry-post');
+                const wordsPerMinute = 200; // Average case.
+                let result;
+
+                let textLength = ev.text().split(" ").length;
+                $('#textlength').html(textLength);
+                if (textLength > 0) {
+                    let value = /*Math.ceil*/ (textLength / wordsPerMinute);
+                    result = `${value} min read`;
+                }
+                $('#readtime').html(result);
+
+
+
+            })();
+            // kiểm tra xem có cần laod hai lai không
+            (function() {
+                if ($('code').length) {
+                    $.getScript('https://cdn.jsdelivr.net/gh/truong-huong/css/prism.js');
+                }
+            })();
+            // checksidebar
+            checkSidebar();
+
+        }
+    );
+    // Phải làm thêm cả sự kiện resize và orientationchange
+    window.addEventListener('scroll', function() {
+        showImages();
+        showTopicSidebar();
+    }, true);
+    window.addEventListener('resize', function() {
+        showImages();
+        showTopicSidebar();
+    }, true);
+    window.addEventListener('orientationchange', function() {
+        showImages();
+        showTopicSidebar();
+    }, true);
+
+    // an hien thanh menu va thanh sidebar
+    $('#open-menu').on('click', function() {
+        $('.menu').toggleClass('show');
+        $('body').toggleClass('hide-scroll-bar');
+    });
+    $('#open-sidebar').on('click', function() {
+        $('.sidebar').toggleClass('show');
+        showTopicSidebar();
+        $('body').toggleClass('hide-scroll-bar');
+    });
+    // dong mo menu va sidebar
+    $('.close-me').on('click', function() {
+        $('#' + $(this).attr('trigger')).trigger('click');
+    });
+
+    //
+
+    //]]>
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/truong-huong/css/prism.css" />
+<!--script src="https://cdn.jsdelivr.net/gh/truong-huong/css/prism.js"></script-->
+<script src='https://kit.fontawesome.com/c04b067d2e.js' />
+
+</html>
